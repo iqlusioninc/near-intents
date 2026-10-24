@@ -6,8 +6,9 @@ rust-version.workspace = true
 repository.workspace = true
 
 [dependencies]
+# Enforce the fixed P-256 arithmetic floor even for consumers with an older lockfile.
+crypto-bigint = { version = "0.7.6", default-features = false }
 ed25519-dalek.workspace = true
-generic-array = { workspace = true, features = ["compat-0_14"] }
 hex.workspace = true
 near-sdk = { workspace = true, features = ["unstable"] }
 p256.workspace = true

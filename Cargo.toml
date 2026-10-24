@@ -43,7 +43,7 @@ default-members = ["defuse"]
 edition = "2024"
 repository = "https://github.com/near/intents"
 version = "0.1.0"
-rust-version = "1.86.0"
+rust-version = "1.87.0"
 
 [workspace.dependencies]
 defuse-admin-utils.path = "admin-utils"
@@ -112,7 +112,7 @@ hex = "0.4"
 hex-literal = "1.0"
 impl-tools = "0.11"
 itertools = "0.14"
-p256 = { version = "0.13.2", default-features = false, features = ["ecdsa"] }
+p256 = { version = "0.14.0", default-features = false, features = ["ecdsa"] }
 proptest = "1.5"
 rand = "0.9"
 rand_chacha = "0.9"
